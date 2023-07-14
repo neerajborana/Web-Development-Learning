@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height width border and background</title>
+    <style>
+        #firstpara{
+            background-color: brown;
+            height: 100px;
+            width:  455px;
+            border: 5px blue solid;
+            /* border-width: 5px;
+            border-color: blue;
+            border-style: double; */
+            border-radius: 11px;
+
+        }
+        #secondpara{
+            background-color: rgb(20, 206, 219);
+            height: 100px;
+            width:  455px;
+            border-top: 5px solid pink;
+            border-right: 5px solid red;
+            border-left: 5px solid yellow;
+            border-bottom: 5px solid green;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 10px ;
+            
+
+        }
+        #thirdpara{
+            height: 500px;
+            width:  455px;
+            background-image: url('https://media.istockphoto.com/photos/round-podium-or-pedestal-with-blue-background-picture-id1226478877');
+            border: 2px solid green;
+             background-repeat: no-repeat;/*repeat x and repeat y will make it repeat on x and y axis */
+             /* background-position: 192px 34 px; */
+             background-position: center center;
+             background-position: bottom right;
+             background-position: top center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p id="firstpara">This is a paragraph</p>
+    <h1>This is a second heading</h1>
+    <p id="secondpara">This is a paragraph</p>
+    <h1>This is a third heading</h1>
+    <p id="thirdpara">This is a paragraph</p>
+</body>
+</html>

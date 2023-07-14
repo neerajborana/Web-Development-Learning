@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+</head>
+<body>
+    <div class="container">
+        This is a Container
+    </div>
+    <script>
+        console.log("This is a Date and time concept");
+        let now=new Date();
+        console.log(now);
+        let now1=new Date(1000);
+        console.log(now1);
+
+        // let newdate=new Date("2050-08-26");
+        // console.log(newdate);
+        //let newdate=new Date(year,month,date,hours,minutes,seconds,milliseconds);
+        let newdate=new Date(2050,7,26,3,23,45,12);
+        console.log(newdate);
+
+        let yr=newdate.getFullYear();
+        console.log("The year is " +yr);
+
+        newdate.setDate(39);
+        console.log(newdate);
+        
+    </script>
+</body>
+</html>

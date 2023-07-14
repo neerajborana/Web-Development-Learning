@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to Events</title>
+    <style>
+        #btn{
+            padding: 10px 12px;
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Events
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMcontentloaded
+
+    transitioned -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi delectus maxime laborum rerum? Culpa excepturi aliquam blanditiis minus veritatis? Minus, sit consequatur. Recusandae minima eos facere. Eos numquam aut quia, nostrum quis, beatae aliquid laudantium asperiores itaque necessitatibus voluptas natus corporis temporibus voluptates perspiciatis sed quasi ullam dignissimos, laboriosam pariatur animi rem repellat rerum? Eligendi veniam laborum magnam illo. Dolor modi veritatis placeat voluptas dolores vitae officia temporibus molestias fuga nemo repellat inventore provident consequuntur exercitationem quod tenetur ipsam iste in pariatur debitis, impedit tempora. Facilis consectetur maiores dolor modi fugit repudiandae itaque saepe incidunt cumque quam. Non voluptatem laborum ducimus laudantium consequuntur vitae veniam mollitia natus eaque autem ex optio, saepe eos asperiores sapiente, exercitationem accusantium. Explicabo esse quidem nulla tempora itaque eaque asperiores est earum inventore, odit laboriosam aut labore adipisci aspernatur error omnis deserunt nesciunt? Impedit obcaecati minus vitae numquam incidunt dolores delectus repudiandae possimus? Reprehenderit commodi iste recusandae ex dolores nihil illo neque fugiat quibusdam tempora, eaque hic possimus architecto minus aut, sed, magni cupiditate consequuntur sunt debitis. Assumenda, ea deserunt. Odit ad dignissimos facilis accusamus ratione accusantium dolorum beatae nemo aperiam fuga libero alias saepe totam adipisci iste assumenda, quibusdam, rem, commodi culpa consequuntur.</p>
+        
+    </div>
+    <button id="btn" onclick="hide()">
+        Show hide
+    </button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+           console.log('Mouse Insight');
+        });
+        para.addEventListener('mouseout',function run(){
+           console.log('Mouse outsight');
+        });
+        function hide(){
+           let btn=document.getElementById('btn');
+           let para=document.getElementById('para');
+           if(para.style.display!='none'){
+           para.style.display='none';
+           }
+           else{
+            para.style.display='block';
+           }
+        }
+    </script>
+
+    
+</body>
+</html>

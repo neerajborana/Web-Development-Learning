@@ -1,0 +1,17 @@
+{
+  "name": "t_59",
+  "version": "1.0.0",
+  "description": "This is a Very Good Package to build.",
+  "main": "T_59.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Neeraj",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+         box-sizing: border-box;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            width: 800px;
+            border: 3px solid black;
+            margin:70px  auto;
+
+        }
+        .item{
+            border: 3px solid black;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(221, 236, 84);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #statio{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+
+        }
+        p,h1{
+            text-align: center;
+            text-align: left;
+            text-align: right;
+            text-align: justify;
+            text-align: justify;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolore
+                maxime. Quis laudantium, id, nemo officiis iste sequi assumenda culpa ex quia fugit consequatur ullam
+                voluptate sed neque quo quasi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi in, iure nam labore deleniti sapiente voluptatibus inventore aliquid aliquam nobis, beatae, deserunt possimus reiciendis nihil accusamus autem corrupti doloremque laborum.</p>
+        </div>
+        <div id="computer" class="item">
+
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolore
+                maxime. Quis laudantium, id, nemo officiis iste sequi assumenda culpa ex quia fugit consequatur ullam
+                voluptate sed neque quo quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus, dolorum quo provident aliquid, autem tempore earum ipsum natus amet sed voluptatibus aliquam facere pariatur exercitationem eveniet? Vero, beatae dolor!</p>
+
+        </div>
+        <div id="statio" class="item">
+            <h3>Stationary</h3>
+            <p id="statiopara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolore
+                maxime. Quis laudantium, id, nemo officiis iste sequi assumenda culpa ex quia fugit consequatur ullam
+                voluptate sed neque quo quasi. </p>
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
